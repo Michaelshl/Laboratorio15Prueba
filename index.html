@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café, Aroma de Lía</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="contenedor-principal">
+        <nav>
+            <ul>
+                <li><a href="#menu">Menú de Productos</a>
+                    <ul>
+                        <li><a href="#cafes">Cafés</a></li>
+                        <li><a href="#postres">Postres</a></li>
+                        <li><a href="#otros">Otros</a></li>
+                    </ul>
+                </li>
+                <li><a href="#carrito">Carrito de Compras</a></li>
+                <li><a href="#registro">Registro / Iniciar sesión</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#autor">Biografía del Autor</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección del Catálogo de Productos -->
+        <section id="menu">
+            <h2>Catálogo de Productos</h2>
+
+            <!-- Cafés -->
+            <section id="cafes">
+                <h3>Cafés</h3>
+                <article>
+                    <img src="cafe expresso.jpeg" alt="Espresso">
+                    <h4>Espresso</h4>
+                    <p>Un café fuerte y concentrado. Perfecto para despertar.</p>
+                    <span>$3.00</span>
+                    <button onclick="agregarAlCarrito('Espresso', 3)">Agregar al carrito</button>
+                </article>
+
+                <article>
+                    <img src="cafe latte.jpeg" alt="Latte">
+                    <h4>Latte</h4>
+                    <p>Un café suave y cremoso con leche vaporizada.</p>
+                    <span>$4.00</span>
+                    <button onclick="agregarAlCarrito('Latte', 4)">Agregar al carrito</button>
+                </article>
+
+                <article>
+                    <img src="cafe americano.jpeg" alt="Americano">
+                    <h4>Americano</h4>
+                    <p>El café americano es la bebida caliente ideal para las personas que quieren tomar un delicioso espresso, pero que no toleran el sabor tan intenso del espresso.</p>
+                    <span>$3.77</span>
+                    <button onclick="agregarAlCarrito('Americano', 4)">Agregar al carrito</button>
+                </article>
+            </section>
+
+            <!-- Postres -->
+            <section id="postres">
+                <h3>Postres</h3>
+                <article>
+                    <img src="postre de chocolate.jpg" alt="Pastel de Chocolate">
+                    <h4>Pastel de Chocolate</h4>
+                    <p>Un delicioso pastel con intenso sabor a chocolate.</p>
+                    <span>$5.00</span>
+                    <button onclick="agregarAlCarrito('Pastel de Chocolate', 5)">Agregar al carrito</button>
+                </article>
+
+                <article>
+                    <img src="chesscake.jpeg" alt="chesscake">
+                    <h4>Chesscake</h4>
+                    <p>El cheesecake es un postre cremoso e irresistible y es probable que lo conozcas por su otro nombre: pastel de queso</p>
+                    <span>$4.97</span>
+                    <button onclick="agregarAlCarrito('Chesscake', 4.97)">Agregar al carrito</button>
+                </article>
+            </section>
+
+            <!-- Otros -->
+            <section id="otros">
+                <h3>Otros</h3>
+                <article>
+                    <img src="te verde.jpeg" alt="Té Verde">
+                    <h4>Té Verde</h4>
+                    <p>Bebida refrescante y saludable.</p>
+                    <span>$2.50</span>
+                    <button onclick="agregarAlCarrito('Té Verde', 2.5)">Agregar al carrito</button>
+                </article>
+            </section>
+        </section>
+
+        <!-- Carrito de Compras -->
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-contenido">
+                <p>No hay productos en el carrito.</p>
+            </div>
+            <div id="total-carrito">
+                <strong>Total: $<span id="total">0.00</span></strong>
+            </div>
+        </section>
+
+        <!-- Registro -->
+        <section id="registro">
+            <h2>Registro de Usuario</h2>
+            <form id="form-registro" onsubmit="validarRegistro(event)">
+                <label for="identificacion">Documento de Identidad</label>
+                <input type="text" id="identificacion" name="identificacion" required>
+
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono (opcional)</label>
+                <input type="text" id="telefono" name="telefono">
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Ubicación: Calle Falsa 123, Ciudad Ficticia</p>
+            <p>Teléfono: +123 456 789</p>
+            <p>Correo: contacto@aromadelia.com</p>
+        </section>
+
+        <!-- Biografía del Autor -->
+        <section id="autor">
+            <h2>Biografía del Autor</h2>
+            <p>Este sitio fue desarrollado por Michael Steven, un apasionado del café y del desarrollo web.</p>
+        </section>
+
+        <!-- Pie de Página -->
+        <footer>
+            <p>&copy; 2024 Café, Aroma de Lía. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

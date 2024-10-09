@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0e3; /* Color de fondo claro */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #8c4e2b; /* Color marrón para la barra de navegación */
+    color: white;
+    padding: 1em 0;
+    display : flex; 
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display : flex; 
+}
+
+nav ul li {
+    display: flex;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+article {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #F4E1B1; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px 0; /* Margen superior e inferior */
+    border: 1px solid #ccc; /* Borde del artículo */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+article img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #8c4e2b; /* Color marrón oscuro para los títulos */
+}
+
+button {
+    background-color: #8c4e2b; /* Color marrón para los botones */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6c3b2c; /* Color marrón más oscuro al pasar el cursor */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #8c4e2b;
+    color: white;
+}
